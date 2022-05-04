@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+    color: rgb(30, 255, 0);
+   
+}
+#wrapper {
+    max-width: 940;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+#logo {
+    text-align: center;
+    margin: 0; 
+}
+nav a.selected, nav a:hover {
+    color: rgb(245, 13, 13); 
+}

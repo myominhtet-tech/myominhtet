@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    background: #292c29;
+    margin: auto;
+}
+
+ul li {
+    list-style-type: none;
+    border: 1px solid white;
+    padding: 20px;
+    margin: 20px 20px;
+    background: #5f8f92;
+    border-radius: 10px;
+}
+
+ul {
+    background: #576457;
+    padding: 0;
+}
