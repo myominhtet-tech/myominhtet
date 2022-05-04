@@ -1,0 +1,145 @@
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+    .main-header,
+    .main-nav,
+    .row {
+        display: flex;
+    }
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .col {
+        /* flex: 1; */
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+    }
+    .button {
+        margin-top: auto;
+        align-self: flex-start;
+        /* flex-end */
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .name {
+        margin-left: 40px;
+    }
+    .main-nav {
+        margin-right: 40px;
+    }
+}
+
+
+/*==============================
+Photo Overlay Transitions
+===============================*/
+
+.photo-container {
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.photo-container img {
+    max-width: 100%;
+    position: relative;
+}
+
+.button {
+    width: 40%;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-radius: .5em;
+    margin: .3em auto 0;
+}
+
+.photo {
+    position: relative;
+    line-height: 0;
+}
+
+
+/* ---- Photo Overlay ---- */
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #c3c6c960;
+    line-height: 0;
+}
+
+
+/* ================================= 
+  Button Transitions
+==================================== */
+
+.button {
+    color: #fff;
+    background: #4a89ca;
+    transition-duration: .4s;
+    transition-property: background;
+}
+
+.button:hover {
+    background: #d36a62;
+}
+
+button:active {
+    background: #a33830;
+}
+
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
+
+.photo-overlay {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+
+/* ================================= 
+  Photo Overlay Multiple Transitions
+==================================== */
+
+.photo-overlay1 {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+
+.photo-overlay1:hover {
+    opacity: 1;
+}
